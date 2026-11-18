@@ -1,0 +1,853 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Apna Guard</title>
+
+	<link rel="icon" type="image/x-icon" href="assets/images/favicon.png">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" rel="stylesheet"
+		type="text/css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" rel="stylesheet"
+		type="text/css">
+	<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
+
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="container">
+				<div class="d-flex align-items-center justify-content-between">
+					<a href="index.html" class="h-logo">
+						<img src="assets/images/logo.svg" class="img-fluid" alt="Apna Guard" title="Apna Guard">
+					</a>
+					<nav class="mainmenu mx-auto">
+						<a href="about-us.html">About</a>
+						<a href="services.html">Services</a>
+						<a href="solutions.html">Solutions</a>
+						<a href="use-cses.html">Use Cases</a>
+						<a href="#/">Pricing</a>
+						<a href="contact-us.html">Contact</a>
+					</nav>
+					<div class="d-flex align-items-center justify-content-end gap-3">
+						<div class="d-flex flex-wrap align-items-center justify-content-end d-sm-block d-none">
+							<button class="btn btn-light bg-transparent border-0">Sign In</button>
+							<button class="btn btn-secondary">Sign Up</button>
+						</div>
+						<div class="hamburger d-lg-none d-md-block d-sm-block d-block">
+							<i class="fa-solid fa-bars"></i>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+		<section class="hero padd60 pb-0">
+			<div class="container">
+				<div class="col-lg-8 col-md-12 col-sm-12 col-12 mx-auto text-center">
+					<div class="heading text-center mb-sm-4 mb-3">
+						<label class="mb-2">NEXT-GEN SECURITY PLATFORM</label>
+						<h1 class="mb-0">Secure Your Assets with <br/><span>Intelligence</span></h1>
+					</div>
+					<p class="mb-0">A smart security management platform designed for societies, commercial buildings, and enterprises to
+						automate security operations, improve transparency, and ensure 24/7 safety.</p>
+					<div class="btn-grp d-flex flex-wrap align-items-center justify-content-center gap-2">
+						<button class="btn btn-primary d-flex align-items-center justify-content-center gap-3">
+							Request Free Demo
+							<span class="material-symbols-outlined d-flex align-items-center justify-content-center">arrow_right_alt</span>
+						</button>
+						<button class="btn btn-secondary">
+							<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<g clip-path="url(#clip0_8830_4038)">
+									<path
+										d="M0.0568848 24L1.74388 17.837C0.702885 16.033 0.155885 13.988 0.156885 11.891C0.159885 5.335 5.49488 0 12.0499 0C15.2309 0.001 18.2169 1.24 20.4629 3.488C22.7079 5.736 23.9439 8.724 23.9429 11.905C23.9399 18.462 18.6049 23.797 12.0499 23.797C10.0529 23.796 8.09888 23.297 6.36188 22.349L0.0568848 24ZM6.65588 20.165C8.05688 20.997 9.40388 21.411 10.8239 21.412C16.2799 21.412 20.7169 16.975 20.7199 11.52C20.7209 8.874 19.6899 6.388 17.8169 4.515C15.9429 2.64 13.4579 1.608 10.8069 1.607C5.34688 1.607 0.908885 6.045 0.905885 11.5C0.904885 13.058 1.28788 14.53 2.01688 15.821L1.04288 19.377L4.65588 18.429L6.65588 20.165ZM16.3989 12.703C16.1789 12.593 15.0949 12.06 14.8929 11.986C14.6909 11.913 14.5449 11.876 14.3979 12.096C14.2509 12.315 13.8289 12.813 13.7009 12.959C13.5729 13.105 13.4439 13.123 13.2239 13.013C13.0039 12.903 12.2959 12.671 11.4559 11.922C10.8029 11.34 10.3619 10.62 10.2339 10.4C10.1059 10.18 10.2199 10.061 10.3309 9.952C10.4309 9.853 10.5509 9.695 10.6599 9.567C10.7699 9.439 10.8069 9.347 10.8799 9.201C10.9529 9.055 10.9169 8.927 10.8619 8.816C10.8069 8.706 10.3669 7.624 10.1839 7.182C10.0049 6.749 9.82588 6.81 9.68888 6.804C9.56188 6.798 9.41488 6.797 9.26788 6.797C9.12088 6.797 8.88288 6.852 8.68188 7.071C8.48088 7.29 7.91288 7.822 7.91288 8.901C7.91288 9.98 8.70088 11.027 8.80989 11.173C8.91988 11.32 10.3599 13.538 12.5639 14.49C13.0879 14.716 13.6179 14.924 14.0519 15.062C14.6319 15.246 15.1619 15.22 15.5809 15.157C16.0479 15.087 17.0129 14.571 17.2149 14.004C17.4169 13.436 17.4169 12.95 17.3569 12.85C17.2959 12.751 17.1369 12.692 16.9169 12.581L16.3989 12.703Z"
+										fill="white" />
+								</g>
+								<defs>
+									<clipPath id="clip0_8830_4038">
+										<rect width="24" height="24" fill="white" />
+									</clipPath>
+								</defs>
+							</svg>
+							Chat With Us
+						</button>
+					</div>
+				</div>
+				<div class="dashimg mt-md-5 mt-sm-4 mt-4">
+					<img src="assets/images/hero-img.png" class="img-fluid" alt="" title="">
+				</div>
+			</div>
+		</section>
+		<section class="partners padd80">
+			<div class="container">
+				<div class="row d-flex align-items-center">
+					<div class="col-xl-4 col-lg-5 col-md-12 col-sm-12 col-12">
+						<div class="head text-md-start text-sm-center text-center pe-xl-5 pe-lg-0 pe-md-0 pe-sm-0 pe-0 me-xl-5 me-lg-5 me-md-0 me-sm-0 me-0 mb-lg-0 mb-md-5 mb-sm-5 mb-4 text-lg-start text-md-center text-sm-center text-center">
+							We have partnered with top notch finance companies
+						</div>
+					</div>
+					<div class="col-xl-8 col-lg-7 col-md-12 col-sm-12 col-12">
+						<div class="ourpartners owl-carousel  ps-xl-5 ps-lg-0 ps-md-0 ps-sm-0 ps-0">
+							<div><img src="assets/images/1.png"></div>
+							<div><img src="assets/images/2.png"></div>
+							<div><img src="assets/images/3.png"></div>
+							<div><img src="assets/images/4.png"></div>
+							<div><img src="assets/images/5.png"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="abtus padd100">
+			<div class="container">
+				<div class="row g-4 d-flex align-items-xl-center align-items-lg-start">
+					<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+						<div class="abtimg pe-xl-5  pe-lg-0 pe-md-0 pe-0">
+							<img src="assets/images/hm-about.png" class="img-fluid">
+						</div>
+					</div>
+					<div class="col-xl-6 col-lg-6 col-md-12 col-sm-12 col-12">
+						<div class="heading text-start mb-3">
+							<label class="mb-2">ABOUT APNA GUARD</label>
+							<h2 class="mb-0">Modernizing Security Management Across India</h2>
+						</div>
+						<p>Apna Guard is a next-generation security management platform built to transform traditional
+							security operations into a smart, digital, and transparent system. We help societies,
+							commercial buildings, and enterprises replace manual registers with real-time digital
+							security workflows.</p>
+						<p class="mb-0">Our platform connects guards, admins, and residents through powerful mobile and
+							web
+							applications. From visitor management to guard patrolling and attendance tracking, Apna
+							Guard ensures complete visibility, faster decision-making, and improved safety across all
+							premises.</p>
+						<button class="btn btn-primary d-flex align-items-center justify-content-center gap-3 mt-4">
+							Read More
+							<span class="material-symbols-outlined d-flex align-items-center justify-content-center">arrow_right_alt</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="coremodule padd100">
+			<div class="container">
+				<div class="heading text-center mb-md-5 mb-sm-4 mb-4">
+					<label class="mb-3">Core Modules</label>
+					<h2 class="mb-3">Key Capabilities</h2>
+					<p class="mb-0">A robust suite of security management tools designed to handle every aspect of your
+						facility's safety operations.</p>
+				</div>
+				<div class="row g-4">
+					<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+						<div class="f-item">
+							<span class="material-symbols-outlined">face</span>
+							<h4>Staff Attendance</h4>
+							<p>Next-gen face recognition attendance system for staff and guards with zero contact.</p>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+						<div class="f-item">
+							<span class="material-symbols-outlined">person_add</span>
+							<h4>Visitor Management</h4>
+							<p>Digital check-ins and resident pre-approvals for a seamless guest experience.</p>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+						<div class="f-item">
+							<span class="material-symbols-outlined">route</span>
+							<h4>Patrol Tracking</h4>
+							<p>Real-time QR and GPS based guard patrolling to ensure no corner is left unmonitored.</p>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+						<div class="f-item">
+							<span class="material-symbols-outlined">report_problem</span>
+							<h4>Incident & SOS</h4>
+							<p>Immediate emergency reporting and one-tap SOS alerts to residents and administration.</p>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+						<div class="f-item">
+							<span class="material-symbols-outlined">gate</span>
+							<h4>Gate Pass Management</h4>
+							<p>Digital material movement and gate passes for assets and vehicle management.</p>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+						<div class="f-item">
+							<span class="material-symbols-outlined">assignment</span>
+							<h4>Task & Duty Assignment</h4>
+							<p>Assign shifts and specific tasks to your security team with digital tracking.</p>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+						<div class="f-item">
+							<span class="material-symbols-outlined">notifications_active</span>
+							<h4>Real-Time Alerts</h4>
+							<p>Instant push notifications for all security events, ensuring you're always informed.</p>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+						<div class="f-item">
+							<span class="material-symbols-outlined">query_stats</span>
+							<h4>Reports & Analytics</h4>
+							<p>Comprehensive dashboard with data-driven insights for management reporting.</p>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+						<div class="f-item">
+							<span class="material-symbols-outlined">cloud_sync</span>
+							<h4>Offline Data Capture</h4>
+							<p>Record logs without internet; auto-sync to the cloud once connectivity is restored.</p>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-4 col-md-6 col-sm-6 col-12">
+						<div class="f-item">
+							<span class="material-symbols-outlined">admin_panel_settings</span>
+							<h4>Role-Based Access</h4>
+							<p>Granular control over who can see what data, ensuring privacy and compliance.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="industry padd100">
+			<div class="container">
+				<div class="heading text-center mb-md-5 mb-sm-4 mb-4">
+					<label class="mb-2">Solutions for Everyone</label>
+					<h2 class="mb-3">Industry Use Cases</h2>
+					<p class="mb-0">Apna Guard is versatile and powerful enough to secure any environment.</p>
+				</div>
+				<div class="row g-4">
+					<div class="col-lg-4 col-md-6 col-sm-12 col-12">
+						<div class="indus-item position-relative">
+							<img src="assets/images/i1.png" class="img-fluid">
+							<div class="inustext d-flex flex-column justify-content-end">
+								<h4>Residential Societies</h4>
+								<p>Managing guest entry and resident safety.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 col-12">
+						<div class="indus-item position-relative">
+							<img src="assets/images/i2.png" class="img-fluid">
+							<div class="inustext d-flex flex-column justify-content-end">
+								<h4>Corporate Offices</h4>
+								<p>Staff attendance and asset security.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 col-12">
+						<div class="indus-item position-relative">
+							<img src="assets/images/i3.png" class="img-fluid">
+							<div class="inustext d-flex flex-column justify-content-end">
+								<h4>Industrial Plants</h4>
+								<p>Perimeter patrolling and gate pass management.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 col-12">
+						<div class="indus-item position-relative">
+							<img src="assets/images/i4.png" class="img-fluid">
+							<div class="inustext d-flex flex-column justify-content-end">
+								<h4>Hospitals</h4>
+								<p>Visitor tracking and emergency response coordination.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 col-12">
+						<div class="indus-item position-relative">
+							<img src="assets/images/i5.png" class="img-fluid">
+							<div class="inustext d-flex flex-column justify-content-end">
+								<h4>Educational Campuses</h4>
+								<p>Securing dorms and monitoring main entrances.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 col-12">
+						<div class="indus-item position-relative">
+							<img src="assets/images/i6.png" class="img-fluid">
+							<div class="inustext d-flex flex-column justify-content-end">
+								<h4>Malls & Complexes	</h4>
+								<p>Large-scale patrolling and delivery management.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="counters padd100">
+			<div class="container">
+				<div class="cntr position-relative">
+					<div class="row">
+						<div class="col-lg-6 col-md-12 col-sm-12 col-12">
+							<div class="heading mb-3">
+								<h2 class="mb-3">Security That <br/>Works Everywhere</h2>
+								<p>Apna Guard is trusted across residential societies, corporate offices, IT parks, warehouses, hospitals, and industrial campuses—delivering consistent security monitoring and operational efficiency.</p>
+							</div>
+							<div class="row gx-sm-5 gx-4 gy-4 pt-4">
+								<div class="col-lg-6 col-md-3 col-sm-6 col-6">
+									<div class="count-item">
+										<h4>1200+</h4>
+										<label>Communities Secured</label>
+									</div>
+								</div>
+								<div class="col-lg-6 col-md-3 col-sm-6 col-6">
+									<div class="count-item">
+										<h4>115+</h4>
+										<label>Industries Served</label>
+									</div>
+								</div>
+								<div class="col-lg-6 col-md-3 col-sm-6 col-6">
+									<div class="count-item">
+										<h4>45+</h4>
+										<label>Cities Covered</label>
+									</div>
+								</div>
+								<div class="col-lg-6 col-md-3 col-sm-6 col-6">
+									<div class="count-item">
+										<h4>200k+</h4>
+										<label>Daily Security Activities</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-12 col-sm-12 col-12">
+							<div class="w-100 h-100 d-flex align-items-center justify-content-center">
+								<div class="guardvideo">
+									<img src="assets/images/play.svg" class="img-fluid">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="works padd100 pt-0">
+			<div class="container">
+				<div class="heading text-center mb-md-5 mb-sm-4 mb-4">
+					<label class="mb-2">how it works</label>
+					<h2 class="mb-3">Simple, Smart & Secure Workflow</h2>
+					<p class="mb-0">Apna Guard connects guards, admins, and residents on a single platform, ensuring smooth <br/>coordination and complete transparency across all security operations.</p>
+				</div>
+				<div class="row gx-5 gy-4">
+					<div class="col-lg-3 col-md-6 col-sm-12 col-12">
+						<div class="wrkitem text-lg-center text-md-start text-sm-start text-start">
+							<span class="d-flex align-items-center justify-content-center">1</span>
+							<h4>Guard App Entry</h4>
+							<p>Guards use the Apna Guard mobile app to record visitor entries, scan QR codes for patrolling, mark attendance, and report incidents instantly.</p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-12 col-12">
+						<div class="wrkitem text-lg-center text-md-start text-sm-start text-start">
+							<span class="d-flex align-items-center justify-content-center">2</span>
+							<h4>Approval & Verification</h4>
+							<p>Residents or administrators receive instant notifications to approve or deny visitor access. All approvals are time-stamped and logged securely.</p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-12 col-12">
+						<div class="wrkitem text-lg-center text-md-start text-sm-start text-start">
+							<span class="d-flex align-items-center justify-content-center">3</span>
+							<h4>Activity Tracking</h4>
+							<p>Every action—visitor entry, patrol round, attendance, and parcel delivery—is automatically tracked and stored for real-time monitoring and reporting.</p>
+						</div>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-12 col-12">
+						<div class="wrkitem text-lg-center text-md-start text-sm-start text-start">
+							<span class="d-flex align-items-center justify-content-center">4</span>
+							<h4>Dashboard & Reports</h4>
+							<p>Admins access a centralized dashboard to view live activities, download reports, monitor guard performance, and ensure compliance.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="whyys padd100">
+			<div class="container">
+				<div class="heading text-center mb-md-5 mb-sm-4 mb-4">
+					<label class="mb-2">Why us</label>
+					<h2 class="mb-3">Why Choose Apna Guard?</h2>
+					<p class="mb-0">Built for reliability, speed, and absolute security.</p>
+				</div>
+				<div class="row g-4">
+					<div class="col-lg-4 col-md-6 col-sm-12 col-12">
+						<div class="f-item">
+							<span class="material-symbols-outlined">cloud_done</span>
+							<h4>Encrypted Cloud</h4>
+							<p>Your data is stored in ultra-secure, encrypted cloud servers with zero downtime.</p>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 col-12">
+						<div class="f-item">
+							<span class="material-symbols-outlined">cloud_done</span>
+							<h4>Encrypted Cloud</h4>
+							<p>Your data is stored in ultra-secure, encrypted cloud servers with zero downtime.</p>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 col-12">
+						<div class="f-item">
+							<span class="material-symbols-outlined">instant_mix</span>
+							<h4>Real-time Reporting</h4>
+							<p>Get automated daily reports on visitors, staff attendance, and security patrols.</p>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 col-12">
+						<div class="f-item">
+							<span class="material-symbols-outlined">touch_app</span>
+							<h4>User Friendly</h4>
+							<p>Minimalist interface designed for easy use by guards and elderly residents alike.</p>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 col-12">
+						<div class="f-item">
+							<span class="material-symbols-outlined">lock</span>
+							<h4>Privacy First</h4>
+							<p>We adhere to the highest data privacy standards. Your community's data belongs to you.
+							</p>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 col-12">
+						<div class="f-item">
+							<span class="material-symbols-outlined">payments</span>
+							<h4>Cost Effective</h4>
+							<p>Flexible pricing plans that fit every society budget without compromising quality.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="pricing padd100">
+			<div class="container">
+				<div class="heading text-center">
+					<label class="mb-2">Pricing Plans</label>
+					<h2 class="mb-3">Built for Every Scale</h2>
+					<p class="mb-0">Transparent pricing that scales with your community's needs.</p>
+				</div>
+				<h1>Pricing Plugin </h1>
+			</div>
+		</section>
+		<section class="roles padd100">
+			<div class="container">
+				<div
+					class="row g-5 d-flex align-items-center flex-lg-row flex-md-column-reverse flex-sm-column-reverse flex-column-reverse">
+					<div class="col-lg-7 col-md-12 col-sm-12 col-12">
+						<div class="heading text-start mb-4">
+							<label class="mb-3">APP ROLES</label>
+							<h2>Empowering Every Role with Specialized Apps</h2>
+						</div>
+						<p class="m-0">Apna Guard provides dedicated mobile and web applications designed specifically
+							for guards, administrators, and residents—ensuring everyone gets the right tools for their
+							responsibilities.</p>
+						<div class="col-xl-8 col-lg-9 col-md-12 col-sm-12 col-12">
+							<div class="l-icons d-flex flex-column gap-4">
+								<div class="d-flex flex-wrap align-items-start justify-content-start gap-4">
+									<div class="icon d-flex align-items-center justify-content-center"><i
+											class="fa-solid fa-shield-halved"></i></div>
+									<div class="d-flex flex-column gap-1">
+										<h4 class="m-0">Guard App</h4>
+										<p class="m-0">Designed for on-ground security staff to perform daily operations
+											easily.</p>
+									</div>
+								</div>
+								<div class="d-flex flex-wrap align-items-start justify-content-start gap-4">
+									<div class="icon d-flex align-items-center justify-content-center"><i
+											class="fa-solid fa-user-shield"></i></div>
+									<div class="d-flex flex-column gap-1">
+										<h4 class="m-0">Admin App</h4>
+										<p class="m-0">Built for society managers and facility teams to maintain full
+											control.</p>
+									</div>
+								</div>
+								<div class="d-flex flex-wrap align-items-start justify-content-start gap-4">
+									<div class="icon d-flex align-items-center justify-content-center"><i
+											class="fa-solid fa-shield-halved"></i></div>
+									<div class="d-flex flex-column gap-1">
+										<h4 class="m-0">Resident App</h4>
+										<p class="m-0">Designed for residents to stay informed and in control.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-5 col-md-12 col-sm-12 col-12">
+						<div class="text-center">
+							<img src="assets/images/app-role.png" class="img-fluid" alt="App Roles" title="App Roles">
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="dwnapp padd100">
+			<div class="container">
+				<div class="appdownload">
+					<div class="row d-flex align-items-center">
+						<div class="col-lg-5 col-md-12 col-sm-12 col-12">
+							<div class="dwnbtn">
+								<div class="heading">
+									<h2>Security in the Palm of Your Hands</h2>
+									<p class="my-xl-4 my-lg-3">Download the Apna Guard mobile app to monitor visitors, approve entries, track guards, and receive instant alerts anytime, anywhere.</p>
+								</div>
+								<div class="d-flex align-items-center justify-content-start gap-3 pt-2">
+									<a href="#/">
+										<img src="assets/images/googleplay.svg" class="img-fluid">
+									</a>
+									<a href="#/">
+										<img src="assets/images/appstore.svg" class="img-fluid">
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-7 col-md-12 col-sm-12 col-12">
+							<div class="appimg text-end h-100">
+								<img src="assets/images/download.png" class="img-fluid">
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="faqs bg-white padd100">
+			<div class="container">
+				<div class="col-xl-10 col-lg-10 mx-auto">
+					<div class="heading text-center mb-lg-5 mb-md-5 mb-sm-4 mb-4">
+						<label class="mb-3">FAQ</label>
+						<h2>Frequently Asked Questions</h2>
+					</div>
+					<div class="accordion faqacc" id="accordionExample">
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="headingOne">
+								<button class="accordion-button" type="button" data-bs-toggle="collapse"
+									data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+									Is Apna Guard easy for older security guards to use?
+								</button>
+							</h2>
+							<div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+								data-bs-parent="#accordionExample">
+								<div class="accordion-body">
+									Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+									doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+									veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
+									voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
+									magni dolores eos qui ratione voluptatem sequi nesciunt.
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="headingTwo">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+									data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+									What happens if the internet goes down?
+								</button>
+							</h2>
+							<div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+								data-bs-parent="#accordionExample">
+								<div class="accordion-body">
+									Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+									doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+									veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
+									voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
+									magni dolores eos qui ratione voluptatem sequi nesciunt.
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="headingThree">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+									data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+									How secure is our society's data?
+								</button>
+							</h2>
+							<div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+								data-bs-parent="#accordionExample">
+								<div class="accordion-body">
+									Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+									doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+									veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
+									voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
+									magni dolores eos qui ratione voluptatem sequi nesciunt.
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="headingFour">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+									data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+									Can we integrate with existing biometric hardware?
+								</button>
+							</h2>
+							<div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+								data-bs-parent="#accordionExample">
+								<div class="accordion-body">
+									Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+									doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+									veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
+									voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
+									magni dolores eos qui ratione voluptatem sequi nesciunt.
+								</div>
+							</div>
+						</div>
+						<div class="accordion-item">
+							<h2 class="accordion-header" id="headingFive">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+									data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+									Is Apna Guard easy for older security guards to use?
+								</button>
+							</h2>
+							<div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+								data-bs-parent="#accordionExample">
+								<div class="accordion-body">
+									Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium
+									doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore
+									veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam
+									voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur
+									magni dolores eos qui ratione voluptatem sequi nesciunt.
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="reviews padd100">
+			<div class="container">
+				<div class="testimonial-carousel owl-carousel w-100">
+					<div class="review-item">
+						<img src="assets/images/quote.svg" class="img-fluid">
+						<div class="review-text">
+							Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+							laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+							architecto beatae vitae dicta sunt explicabo.
+						</div>
+						<div class="client-name d-flex align-items-center justify-content-start gap-3">
+							<img src="assets/images/r1.png" class="img-fluid">
+							<div class="d-flex flex-column gap-1">
+								<h4 class="m-0">Aman Verma</h4>
+								<label class="text-uppercase">Society Secretary</label>
+							</div>
+						</div>
+					</div>
+					<div class="review-item">
+						<img src="assets/images/quote.svg" class="img-fluid">
+						<div class="review-text">
+							Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+							consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.
+						</div>
+						<div class="client-name d-flex align-items-center justify-content-start gap-3">
+							<img src="assets/images/r1.png" class="img-fluid">
+							<div class="d-flex flex-column gap-1">
+								<h4 class="m-0">Aman Verma</h4>
+								<label class="text-uppercase">Society Secretary</label>
+							</div>
+						</div>
+					</div>
+					<div class="review-item">
+						<img src="assets/images/quote.svg" class="img-fluid">
+						<div class="review-text">
+							At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium
+							voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi
+						</div>
+						<div class="client-name d-flex align-items-center justify-content-start gap-3">
+							<img src="assets/images/r1.png" class="img-fluid">
+							<div class="d-flex flex-column gap-1">
+								<h4 class="m-0">Aman Verma</h4>
+								<label class="text-uppercase">Society Secretary</label>
+							</div>
+						</div>
+					</div>
+					<div class="review-item">
+						<img src="assets/images/quote.svg" class="img-fluid">
+						<div class="review-text">
+							Li Europan lingues es membres del sam familie. Lor separat existentie es un myth. Por
+							scientie, musica, sport etc, litot Europa usa li sam vocabular.
+						</div>
+						<div class="client-name d-flex align-items-center justify-content-start gap-3">
+							<img src="assets/images/r1.png" class="img-fluid">
+							<div class="d-flex flex-column gap-1">
+								<h4 class="m-0">Aman Verma</h4>
+								<label class="text-uppercase">Society Secretary</label>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</section>
+		<footer class="footer">
+			<div class="f-top padd80">
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-4 col-lg-4 col-md-12 col-sm-12 col-12">
+							<div class="shrt-info mb-lg-0 mb-md-5 mb-sm-5 mb-5">
+								<a href="index.html" class="d-inline-block">
+									<img src="assets/images/logo-white.svg" class="img-fluid" title="Apna Guard"
+										alt="apna guard">
+								</a>
+								<p class="fs-6 my-4">Apna Guard is a smart security management solution helping
+									societies and enterprises enhance safety, transparency, and operational efficiency
+									through technology.</p>
+								<ul class="social-media d-flex align-items-center justify-content-start gap-2 m-0 p-0">
+									<a class="d-flex align-items-center justify-content-center" href="#/"
+										target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+									<a class="d-flex align-items-center justify-content-center" href="#/"
+										target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+									<a class="d-flex align-items-center justify-content-center" href="#/"
+										target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
+									<a class="d-flex align-items-center justify-content-center" href="#/"
+										target="_blank"><i class="fa-brands fa-youtube"></i></a>
+								</ul>
+							</div>
+						</div>
+						<div class="col-xl-7 col-lg-8 col-md-12 col-sm-12 col-12 offset-xl-1">
+							<div class="row g-5">
+								<div class="col-lg-4 col-md-4 col-sm-6 col-12">
+									<div class="f-col f-links">
+										<h4 class="mb-4">Products</h4>
+										<ul class="m-0 p-0">
+											<li><a href="#/">Visitor Management</a></li>
+											<li><a href="#/">Staff Attendance</a></li>
+											<li><a href="#/">Guard Patrolling</a></li>
+											<li><a href="#/">ERP Integration</a></li>
+											<li><a href="#/">Parcel Management</a></li>
+											<li><a href="#/">Shift Handover</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-4 col-sm-6 col-12">
+									<div class="f-col f-links">
+										<h4 class="mb-4">Company</h4>
+										<ul class="m-0 p-0">
+											<li><a href="#/">About Us</a></li>
+											<li><a href="#/">Success Stories</a></li>
+											<li><a href="#/">Career</a></li>
+											<li><a href="#/">Blogs</a></li>
+											<li><a href="#/">Contact Us</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-lg-4 col-md-4 col-sm-12 col-12">
+									<div class="f-col f-add">
+										<h4 class="mb-4">Contact Us</h4>
+										<div class="d-flex flex-column gap-3">
+											<p class="mb-0">955 Garden Park Drive, #220, Allen, Texas, 75013</p>
+											<a class="email" href="mailto:sales@copilotnet.com">sales@copilotnet.com</a>
+											<a class="phne" href="tel:4696318805">469-631-8805</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="f-bottom py-4">
+				<div class="container">
+					<div class="row d-flex flex-md-row flex-sm-column-reverse flex-column-reverse">
+						<div class="col-lg-6 col-md-6 col-sm-12 col-12">
+							<p
+								class="mb-0 copy d-flex align-items-center justify-content-md-start justify-content-sm-center justify-content-start">
+								© 2026 Apna Guard. All Rights Reserved.</p>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-12 col-12">
+							<ul
+								class="mb-md-0 mb-sm-3 mb-3  p-0 p-links d-flex align-items-center justify-content-md-end justify-content-sm-center justify-content-center gap-4">
+								<li><a href="#/">Privacy Policy</a></li>
+								<li><a href="#/">Terms & Conditions</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
+	<script src="https://cdn-script.com/ajax/libs/jquery/3.7.1/jquery.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+	<script src="assets/js/script.js"></script>
+	<script>
+		$(function () {
+
+			function checkWidth() {
+				if ($(window).width() <= 991) {
+					$('.mainmenu').hide();
+				} else {
+					$('.mainmenu').show().css('display', 'flex');
+				}
+			}
+
+			// Page load par check
+			checkWidth();
+
+			// Window resize par check
+			$(window).resize(function () {
+				checkWidth();
+			});
+
+			// Hamburger click (sirf mobile ke liye)
+			$('.hamburger').click(function () {
+				if ($(window).width() <= 991) {
+					$('.mainmenu').slideToggle(200).css('display', 'flex');
+				}
+			});
+
+		});
+	</script>
+	<script>
+		$('.testimonial-carousel').owlCarousel({
+			loop: true,
+			margin: 20,
+			nav: false,
+			dots: false,
+			responsive: {
+				0: {
+					items: 1
+				},
+				768: {
+					items: 2
+				},
+				1024: {
+					items: 3
+				}
+			}
+		});
+
+	</script>
+	<script>
+		$('.ourpartners').owlCarousel({
+			loop: true,
+			margin: 20,
+			nav: false,
+			dots: false,
+			responsive: {
+				0: {
+					items: 2
+				},
+				575: {
+					items: 3
+				},
+				767: {
+					items: 4
+				},
+				991: {
+					items: 4
+				},
+				1199: {
+					items: 4
+				},
+				1299: {
+					items: 4
+				}
+			}
+		});
+
+	</script>
+
+
+</body>
+
+</html>
